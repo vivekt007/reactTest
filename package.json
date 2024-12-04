@@ -1,10 +1,14 @@
 {
-  "name": "reacttest",
+  "homepage": "https://vivekt007.github.io/reactTest",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "start": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"

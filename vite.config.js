@@ -1,7 +1,16 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
-// https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
-})
+    plugins: [react()],
+    base: "/", // Base path for GitHub Pages
+    server: {
+        port: 4000,
+        host: "0.0.0.0",
+        logLevel: "silent",
+        client: {
+            logging: "none",
+        },
+        assetsInclude: ["**/*.ttf", "**/*.png"],
+    },
+});
