@@ -1,0 +1,310 @@
+@import url("../styles/variables.css");
+
+:root {
+    --color-pure-black: #000000;
+    --color-pure-white: #ffffff;
+    --color-dark-void: #151419;
+    --color-smoky-black: #1b1b1e;
+    --color-dusty-grey: #878787;
+    --color-flash-white: #fbfbfb;
+    --color-blood-red: #cc0118;
+}
+
+.our-services {
+    width: 100%;
+    min-height: 100%;
+    padding: 80px 60px 40px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.our-services-row1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 40px; */
+}
+
+.our-services-row1 h1 {
+    width: fit-content;
+    font-size: 40px;
+    color: var(--color-flash-white);
+}
+
+.our-services-row1 p {
+    width: 60%;
+    text-align: center;
+    font-size: 24px;
+    color: var(--color-dusty-grey);
+}
+
+.our-services-row2 {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(3, minmax(280px, 1fr));
+    justify-content: center;
+}
+
+.our-services-row2 button {
+    width: 300px;
+    height: 300px;
+    border: none;
+    transition: 0.3s;
+    border-radius: 4px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    opacity: 0.8;
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.our-services-row2 button p {
+    font-size: 24px;
+    color: var(--color-dark-void);
+    padding: 0 0 24px 0;
+}
+
+.service-card {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--color-pure-white);
+}
+
+.services-fire-extiunguisher {
+    background: url(../assets/ProductImages/FireExtiunguisherBtn.png);
+    &:hover {
+        transform: translate(-4px, -4px);
+        box-shadow: 4px 4px 4px #87878790;
+    }
+}
+
+.services-fire-hydrant {
+    background: url(../assets/ProductImages/FireHydrantBtn.png);
+    &:hover {
+        transform: translate(0px, -4px);
+        box-shadow: 0px 4px 4px #87878790;
+    }
+}
+
+.services-cctv {
+    background: url(../assets/ProductImages/cctvBtn.png);
+    &:hover {
+        transform: translate(4px, -4px);
+        box-shadow: -4px 4px 4px #87878790;
+    }
+}
+
+.services-fire-alarm {
+    background: url(../assets/ProductImages/FirealarmBtn.png);
+    &:hover {
+        transform: translate(-4px, 0px);
+        box-shadow: 4px 0px 8px #87878790;
+    }
+}
+
+.services-biometrics {
+    background: url(../assets/ProductImages/BiometricsBtn.png);
+    &:hover {
+        transform: scale(1.02);
+        box-shadow: 4px 4px 8px #87878790, -4px -4px 8px #87878790;
+    }
+}
+
+.services-gas-suppression {
+    background: url(../assets/ProductImages/GasSuppressionBtn.png);
+    &:hover {
+        transform: translate(4px, 0px);
+        box-shadow: -4px 0px 8px #87878790;
+    }
+}
+
+.services-signage {
+    background: url(../assets/ProductImages/SignageBtn.png);
+    &:hover {
+        transform: translate(-4px, 4px);
+        box-shadow: 4px -4px 4px #87878790;
+    }
+}
+
+.services-safety-tranings {
+    background: url(../assets/ProductImages/SafetyTraningsBtn.png);
+    &:hover {
+        transform: translate(0px, 4px);
+        box-shadow: 0px -4px 4px #87878790;
+    }
+}
+
+.services-risk-assesment {
+    background: url(../assets/ProductImages/RiskAssessmentBtn.png);
+    &:hover {
+        transform: translate(4px, 4px);
+        box-shadow: -4px -4px 4px #87878790;
+    }
+}
+
+.free-consultaion {
+    width: 100%;
+    min-height: 100dvh;
+    max-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+    background: radial-gradient(#0c0136 1%, #000000 70%);
+    overflow: hidden;
+}
+
+.consultation-row1 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.consultation-row1 h1 {
+    font-size: 48px;
+    color: var(--color-flash-white);
+    line-height: 100%;
+}
+
+.consultation-row1 p {
+    font-size: 18px;
+    color: var(--color-dusty-grey);
+}
+
+.service-graphic-element {
+    /* position: absolute; */
+    width: fit-content;
+    height: fit-content;
+    padding: 20px 40px;
+    border-radius: 200px;
+    box-shadow: none;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    animation: GE-animation infinite linear 3s;
+}
+
+.service-graphic-element1 {
+    background-color: #3001eb;
+    animation-delay: 0.3s;
+}
+
+.service-graphic-element2 {
+    background-color: #2b02d0;
+    animation-delay: 0.6s;
+}
+
+.service-graphic-element3 {
+    background-color: #2602b5;
+    animation-delay: 0.9s;
+}
+
+.service-graphic-element4 {
+    background-color: #2404a5;
+    animation-delay: 1.2s;
+}
+
+.service-graphic-element5 {
+    background-color: #1d0388;
+    animation-delay: 1.5s;
+}
+
+.service-graphic-element6 {
+    background-color: #150163;
+    animation-delay: 1.8s;
+}
+
+.service-graphic-element7 {
+    background-color: #10024b;
+    animation-delay: 2.1s;
+}
+
+.service-graphic-element8 {
+    background-color: #0c0136;
+    animation-delay: 2.4s;
+}
+
+.service-graphic-element9 {
+    background-color: #080125;
+    animation-delay: 2.7s;
+}
+
+.service-cta {
+    background-color: transparent;
+    border: 1px solid var(--color-flash-white);
+    font-size: 24px;
+    min-width: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: var(--color-flash-white);
+    border-radius: 50px;
+    padding: 12px 24px;
+    transition: 0.3s;
+    &:hover {
+        transform: scale(1.02);
+        box-shadow: -2px -2px 12px #a8a8a820, 2px 2px 12px #a8a8a820;
+        cursor: pointer;
+    }
+}
+
+@keyframes GE-animation {
+    0% {
+        transform: translateX(0px);
+        box-shadow: none;
+    }
+    50% {
+        transform: translateX(-01px);
+        box-shadow: -2px -2px 12px #a8a8a820, 2px 2px 12px #a8a8a820;
+    }
+    100% {
+        transform: translateX(0px);
+        box-shadow: none;
+    }
+}
+
+.service-cta img {
+    width: 24px;
+}
+
+@media (max-width: 1024px) {
+    .our-services-row2 {
+        grid-template-columns: repeat(2, minmax(280px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .our-services {
+        padding: 80px 24px;
+    }
+
+    .our-services-row1 p {
+        width: 90%;
+    }
+
+    .our-services-row2 {
+        grid-template-columns: repeat(1, minmax(280px, 1fr));
+    }
+
+    .consultation-row1 {
+        padding: 0px 24px;
+    }
+
+    .service-graphic-element {
+        animation: none;
+        -webkit-animation: none;
+    }
+}

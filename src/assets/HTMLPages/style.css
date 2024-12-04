@@ -1,0 +1,70 @@
+* {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+iframe {
+    background-color: transparent;
+}
+
+.fire-extinguisher {
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8dvh 0 0 0;
+    /* background: linear-gradient(90deg, #111111, #000000); */
+    background-color: transparent;
+    background-color: #b11b1b;
+}
+
+.fe-col2 {
+    height: 100%;
+    width: 100%;
+    /* padding: 2rem; */
+}
+
+.fe-col1 {
+    /* background: url("../assets/BackgroundImg/HeroBg2.jpg"); */
+    /* box-shadow: inset -16px -16px 60px #000, inset 16px 16px 60px #000; */
+    object-fit: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fe-c2-product-img {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: url("https://my.spline.design/bitcoinhits52k-b2f8784ea7c0536dd81e745b576d8e75/"); */
+}
+
+.fe-c2-product-img iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.fe-c2-actions {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (prefers-color-scheme: dark) {
+    h1 {
+        color: #1b1bb1;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    h1 {
+        color: #b11b1b;
+    }
+}

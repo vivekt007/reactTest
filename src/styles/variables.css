@@ -1,0 +1,118 @@
+:root {
+    --color-pure-black: #000000;
+    --color-pure-white: #ffffff;
+    --color-dark-void: #151419;
+    --color-smoky-black: #1b1b1e;
+    --color-dusty-grey: #878787;
+    --color-flash-white: #fbfbfb;
+    --color-blood-red: #cc0118;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-display: swap;
+}
+
+body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.hidden {
+    opacity: 0;
+    transition: 0.5s;
+    filter: blur(5px);
+    transform: translateX(100%);
+}
+
+.blur {
+    opacity: 0;
+    transition: all 2s;
+    filter: blur(5px);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0%);
+    top: 0;
+}
+
+section {
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: "AstoriaLight";
+    src: url("../assets/Fonts/Astoria/AstoriaLight.ttf") format("opentype");
+    font-weight: 400;
+    font-style: Light;
+}
+
+@font-face {
+    font-family: "AstoriaRegular";
+    font-weight: 400;
+    src: url("../assets/Fonts/Astoria/AstoriaRoman.ttf") format("truetype");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "AstoriaMedium";
+    src: url("../assets/Fonts/Astoria/AstoriaMedium.ttf") format("opentype");
+    font-weight: 700;
+    font-style: Medium;
+}
+
+@font-face {
+    font-family: "AstoriaBold";
+    src: url("../assets/Fonts/Astoria/zAstoriaBold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: Bold;
+}
+
+@font-face {
+    font-family: "SulphurLight";
+    src: url("../assets/fonts/SulphurPoint/SulphurPoint-Light.ttf")
+        format("truetype");
+    font-weight: 400;
+    font-style: light;
+}
+
+@font-face {
+    font-family: "SulphurRegular";
+    src: url("../assets/fonts/SulphurPoint/SulphurPoint-Regular.ttf")
+        format("truetype");
+    font-weight: 400;
+    font-style: regular;
+}
+
+@font-face {
+    font-family: "SulphurBold";
+    src: url("../assets/fonts/SulphurPoint/SulphurPoint-Bold.ttf")
+        format("truetype");
+    font-weight: 400;
+    font-style: Bold;
+}
+
+@font-face {
+    font-family: "OpenSansBold";
+    src: url("../assets/fonts/Open_Sans/static/OpenSans-Bold.ttf")
+        format("truetype");
+    font-weight: 400;
+    font-style: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p {
+    color: var(--color-flash-white);
+}

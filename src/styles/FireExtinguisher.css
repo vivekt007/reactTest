@@ -1,0 +1,437 @@
+@import url("../styles/variables.css");
+
+.fire-extinguisher {
+    background-color: var(--color-pure-black);
+    width: 100%;
+    min-height: 100dvh;
+    max-height: 100%;
+}
+
+.extinguisher-row1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    min-height: 100dvh;
+    max-height: fit-content;
+    padding: 80px 60px 40px 60px;
+}
+
+.extinguisher-r1-col1 {
+    width: 40%;
+    min-height: 80dvh;
+    max-height: 100%;
+    background-color: #15141980;
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.ext-r1-c1-row1 {
+    width: 100%;
+}
+
+.ext-r1-c1-row1 h1 {
+    font-size: 40px;
+    color: var(--color-flash-white);
+}
+
+.ext-r1-c1-row2 {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.ext-r1-c1-row2 h3,
+.ext-cont-row1 h3,
+.ext-cont-row2 h3,
+.ext-cont-row3 h3 {
+    font-size: 16px;
+    color: var(--color-dusty-grey);
+}
+
+.ext-r1-c1-r2-tabs {
+    display: flex;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.tab {
+    padding: 4px 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    font-size: 16px;
+    font-family: "SulphurLight";
+    line-height: 100%;
+}
+
+.tab.active {
+    border-bottom: 1px solid var(--color-flash-white);
+    color: var(--color-flash-white);
+    font-family: "SulphurRegular";
+}
+
+.tab.inactive {
+    color: var(--color-dusty-grey);
+    &:hover {
+        color: var(--color-flash-white);
+    }
+}
+
+.content {
+    color: var(--color-flash-white);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.Other-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 10px 0 0 0;
+}
+
+.Other-content h3 {
+    font-size: 18px;
+    color: var(--color-flash-white);
+    line-height: 100%;
+}
+
+.Other-content p {
+    font-size: 12px;
+    color: var(--color-dusty-grey);
+}
+
+.ext-cont-row1 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.ext-cont-row1 h2 {
+    font-family: "SulphurBold";
+    font-size: 32px;
+    color: var(--color-flash-white);
+    line-height: 100%;
+}
+
+.ext-cont-row1 span {
+    font-size: 16px;
+    font-family: "SulphurLight";
+    color: var(--color-dusty-grey);
+    display: flex;
+    gap: 8px;
+    align-items: flex-end;
+}
+
+.rating-bar-container {
+    width: 100%;
+    background-color: var(--color-dusty-grey);
+    height: 4px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.rating-bar {
+    background-color: var(--color-blood-red);
+    height: 6px;
+    border-radius: 4px;
+    box-shadow: #ff000050 -1px -1px 8px, #ff000050 1px 1px 8px;
+}
+
+.ABC-type {
+    width: 60%;
+}
+
+.CO2-type {
+    width: 42%;
+}
+
+.CleanAgent-type {
+    width: 58%;
+}
+
+.Water-type {
+    width: 20%;
+}
+
+.Foam-type {
+    width: 28%;
+}
+
+.KType-type {
+    width: 28%;
+}
+
+.Lithium-type {
+    width: 20%;
+}
+
+.Up-riser,
+.Down-comer {
+    width: 92%;
+}
+
+.ext-cont-row2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.highlights-container {
+    display: flex;
+    gap: 8px;
+    padding: 12px;
+    background-color: #1b1b1e60;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.high-icon {
+    padding: 8px;
+    background-color: var(--color-smoky-black);
+    border-radius: 4px;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.high-icon img {
+    width: 24px;
+}
+
+.high-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.high-text p {
+    color: var(--color-flash-white);
+    font-size: 16px;
+    font-family: "SulphurLight";
+    line-height: 100%;
+}
+
+.high-text h5 {
+    color: var(--color-dusty-grey);
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 5%;
+}
+
+.ext-cont-row3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 8px;
+}
+
+.risk-assessment-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.risk-assessment-detail ol {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.details-text {
+    font-size: 16px;
+    font-family: "SulphurLight";
+    color: var(--color-flash-white);
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.3s ease;
+}
+
+.details-text.expanded {
+    line-clamp: unset;
+    -webkit-line-clamp: unset;
+    overflow: visible;
+}
+
+.see-more-btn {
+    background: none;
+    border: none;
+    color: var(--color-blood-red);
+    cursor: pointer;
+    opacity: 0.8;
+    transition: color 0.3s ease;
+    padding: 0px;
+}
+
+.see-more-btn:hover {
+    opacity: 1;
+}
+
+.extinguisher-r1-col2 {
+    width: 60%;
+    height: 80dvh;
+    max-height: fit-content;
+    background-color: #15141980;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 24px;
+    gap: 24px;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+        /* transform: scale(1.1); */
+        transform: rotate(90deg);
+    }
+}
+
+.close-btn img {
+    width: 16px;
+}
+
+.extinguisher-r1-c2-row1 {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+
+.extinguisher-r1-c2-row1 img {
+    max-height: 400px;
+    max-width: 400px;
+}
+
+.extinguisher-r1-c2-row2 {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--color-dusty-grey);
+    padding: 16px 0 0 0;
+}
+
+.extinguisher-r1-c2-row2 h3 {
+    font-size: 24px;
+    color: var(--color-dusty-grey);
+}
+
+.extinguisher-r1-c2-row2 button {
+    background-color: var(--color-blood-red);
+    color: var(--color-flash-white);
+    padding: 8px 16px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    transition: 0.3s;
+    &:hover {
+        transform: translate(4px, -4px);
+        box-shadow: -4px 4px var(--color-flash-white);
+    }
+}
+
+.extinguisher-r1-c2-row2 button img {
+    width: 12px;
+}
+
+@media (max-width: 1280px) {
+    .extinguisher-r1-col1,
+    .product-extinguisher-r1-col2 {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .fire-extinguisher {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .extinguisher-row1 {
+        flex-direction: column;
+        padding: 80px 24px 0px 24px;
+        height: fit-content;
+    }
+
+    .extinguisher-row1 > div {
+        height: fit-content;
+        width: 100%;
+        padding: 16px;
+    }
+
+    .ext-r1-c1-r2-tabs {
+        overflow-x: scroll;
+    }
+
+    .extinguisher-r1-c2-row1 {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .extinguisher-r1-c2-row2 {
+        width: 100%;
+        height: fit-content;
+        padding: 8px 0;
+    }
+
+    .extinguisher-r1-col2 {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .extinguisher-r1-c2-row1 img {
+        width: 250px;
+        /* height: 100%; */
+    }
+
+    .extinguisher-r1-c2-row2 h3 {
+        font-size: 20px;
+    }
+
+    .extinguisher-r1-c2-row2 button {
+        padding: 4px 12px;
+    }
+}

@@ -1,0 +1,20 @@
+@import url("../styles/variables.css");
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+    font-family: "SulphurRegular", sans-serif;
+}
+
+.active-link {
+    color: var(--color-blood-red);
+}
+
+.inactive-link {
+    color: var(--color-blood-red);
+}
